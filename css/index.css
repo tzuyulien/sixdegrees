@@ -1,3 +1,10 @@
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 2s linear forwards;
+          animation: dash 2s linear forwards;
+}
+
 .header {
   height: 100vh;
   background-color: #69C2E0;
@@ -52,7 +59,7 @@
   list-style: none;
   text-align: right;
   padding: 0px;
-  color: #aaa;
+  color: #69C2E0;
 }
 .navi ul a {
   display: inline-block;
@@ -66,7 +73,7 @@
 .navi ul a span {
   transition: opacity .2s ease-out;
   opacity: 0;
-  color: #69C2E0;
+  color: #aaa;
   font-size: 14px;
   position: absolute;
   top: 23px;
@@ -96,7 +103,7 @@
   box-sizing: border-box;
 }
 .navi-fixed ul {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
   margin: 0px auto;
   list-style: none;
   text-align: center;
@@ -133,11 +140,67 @@
 }
 
 .content {
-  height: 200px;
-  border: 2px solid #666;
-  margin: 0px 30px;
-  width: 100px;
+  height: auto;
+  min-height: 220px;
+  border-bottom: 1px solid #ccc;
+  margin: 0px auto;
+  width: 75%;
   background-image: none;
+  padding: 30px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #aaa;
+  position: relative;
+}
+.content.about a {
+  font-size: 16px;
+}
+.content.about div:nth-child(2) {
+  font-size: 16px;
+}
+.content.event span {
+  margin-right: 15px;
+  width: 120px;
+  color: #555;
+  font-size: 18px;
+  font-weight: 800;
+}
+.content.event div {
+  border-left: 30px solid #69C2E0;
+  height: 30px;
+  margin: 10px 0px;
+  line-height: 30px;
+  padding-left: 15px;
+}
+.content.event div:nth-child(odd) {
+  border-left: 30px solid #F1D92F;
+}
+.content.works svg {
+  width: 200px;
+  height: 200px;
+}
+.content.works img {
+  width: 70%;
+  text-align: center;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  transition: -webkit-filter .2s ease-out, filter .2s ease-out;
+}
+.content.works img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+.content.works .team {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .content-float {

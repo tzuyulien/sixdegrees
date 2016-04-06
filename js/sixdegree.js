@@ -29,8 +29,9 @@ $(window).load(function(){
       }
 
       if (windowTop >= boxTop) {
-        $('.content-float').each(function(i) {
-            if ($(this).position().top <= windowTop + 70) {
+        console.log('hi');
+        $('.content').each(function(i) {
+            if ($(this).position().top <= windowTop) {
                 $('.navi-fixed ul a.active').removeClass('active');
                 $('.navi-fixed ul a').eq(i).addClass('active');
             }
@@ -53,28 +54,28 @@ var main = function() {
 
 
 
-  $(".all .navi ul a.tab1").click(function() {
+  $(".all .navi-fixed ul a.tab1").click(function() {
     $('html, body').animate({scrollTop: $("#tab1-item").offset().top}, 1000);
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
     console.log('hi');
   });
-  $(".all .navi ul a.tab2").click(function() {
+  $(".all .navi-fixed ul a.tab2").click(function() {
     $('html, body').animate({scrollTop: $("#tab2-item").offset().top}, 1000);
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
   });
-  $(".all .navi ul a.tab3").click(function() {
+  $(".all .navi-fixed ul a.tab3").click(function() {
     $('html, body').animate({scrollTop: $("#tab3-item").offset().top}, 1000);
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
   });
-  $(".all .navi ul a.tab4").click(function() {
+  $(".all .navi-fixed ul a.tab4").click(function() {
     $('html, body').animate({scrollTop: $("#tab4-item").offset().top}, 1000);
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
   });
-  $(".all .navi ul a.tab5").click(function() {
+  $(".all .navi-fixed ul a.tab5").click(function() {
     $('html, body').animate({scrollTop: $("#tab5-item").offset().top}, 1000);
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
