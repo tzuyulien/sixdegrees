@@ -1,0 +1,171 @@
+
+
+.header{
+	height: 100vh;
+	background-color: #69C2E0;
+	background-image: none;
+	position: fixed;
+	margin-top: -500px;
+	z-index: -1;
+
+		svg {
+			margin-left: -10px;
+			margin-top: 250px;
+			display: inline-block;
+			// position: absolute;
+			animation-name: go;
+		}
+
+		.path {
+		  stroke-dasharray: 1000;
+		  stroke-dashoffset: 1000;
+		  animation: dash 2s linear forwards;
+		}
+
+		.logo-word {
+			width: 250px;
+			left: 250px;
+			margin-left: -10px;
+			margin-top: 280px;
+			display: inline-block;
+			// position: absolute;
+			transition: opacity .3s ease-out;
+			&:hover {
+				opacity: 0.6;
+			}
+
+		}
+}
+
+.all {
+	background-image: url("../images/re.png");
+	background-repeat: repeat;
+	margin-top: 500px;
+	background-size: 100vw;
+	height: 100vh;
+	position: relative;
+	&.fixed {
+		position: fixed;
+		top: 0;
+		width: 100vw;
+		margin: 0;
+	}
+}
+
+.navi {
+	position: absolute;
+	top: 500px;
+	text-align: center;
+	height: 100px;
+	ul {
+		margin: 0px auto;
+		list-style: none;
+		text-align: center;
+		padding: 0px;
+		color: #aaa;
+		a {
+			display: inline-block;
+			padding: 20px 30px;
+			width: 120px;
+			box-sizing: border-box;
+			div {
+				transition: opacity .2s ease-out;
+			}
+			span {
+				transition: opacity .2s ease-out;
+				opacity: 0;
+				color: #69C2E0;
+				font-size: 14px;
+				position: absolute;
+				top: 23px;
+				left: 30px;
+				z-index: 10;
+			}
+			&:hover {
+				div {
+					opacity: 0;
+				}
+				span {
+					opacity: 1;
+				}
+
+			}
+		}
+	}
+	&.fixed {
+		opacity: 0;
+	}
+}
+
+.navi-fixed {
+	position: fixed;
+	z-index: 20;
+	top: 0px;
+	// background-size: 100vw;
+	height: 100px;
+	width: 100%;
+	ul {
+		background-color:rgba(256,256,256,0.3);
+		margin: 0px auto;
+		list-style: none;
+		text-align: center;
+		padding: 0px;
+		color: red;
+		a {
+			display: inline-block;
+			padding: 20px 30px;
+			width: 120px;
+			box-sizing: border-box;
+			div {
+				transition: opacity .2s ease-out;
+			}
+			span {
+				transition: opacity .2s ease-out;
+				opacity: 0;
+				color: #69C2E0;
+				font-size: 14px;
+				position: absolute;
+				top: 23px;
+				left: 30px;
+				z-index: 10;
+			}
+			&:hover {
+				div {
+					opacity: 0;
+				}
+				span {
+					opacity: 1;
+				}
+
+			}
+		}
+	}
+	&.fixed {
+		display: block;
+	}
+}
+
+
+.content {
+	height: 200px;
+	background-color: green;
+	border: 2px solid #666;
+	margin: 30px;
+	width: 100px;
+	background-image: none;
+}
+.content-float {
+	margin-top: 67px;
+	position: relative;
+}
+
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+
