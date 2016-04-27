@@ -215,10 +215,10 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ_SuknX6qQjQRawbYw
 	var map;
 	function initMap() {
 		console.log('hi444');
-	var myLatLng = {lat: 24.986113, lng: 121.578957};
+	var myLatLng = {lat: 24.986674, lng: 121.576759};
 	var mapOptions = {
 		center: myLatLng,
-		zoom:17,
+		zoom:18,
 		scrollwheel: false,
 		navigationControl: false,
 		mapTypeControl: false,
@@ -228,10 +228,10 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ_SuknX6qQjQRawbYw
 	map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
 	var infowindow = new google.maps.InfoWindow();
 	var marker = new google.maps.Marker({
-    position: myLatLng,
+    position: {lat: 24.986113, lng: 121.578957},
     map: map,
     animation: google.maps.Animation.DROP,
-    icon: 'images/map-icon.svg',
+    icon: 'images/map-icon.png',
     title: 'Hello World!'
   	});
 
