@@ -18,6 +18,10 @@ a {
   position: relative;
 }
 
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
 section {
   background-image: url("../images/white-bg.jpg");
   background-repeat: repeat;
