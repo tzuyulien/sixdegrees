@@ -2,18 +2,19 @@
 
 body
 {
-	background-color: #69C2E0;
+	// background-image: url("../images/re.png");
+	// background-color: #F1D92F;
 	font-family: 'Open Sans Condensed', sans-serif;
 	margin: 0px;
-	color: #777;
+	color: #444;
 	font-size: 18px;
 	letter-spacing: 2px;
-	font-weight: 600;
+	// font-weight: 600;
 	box-sizing: border-box;
 }
 
 a {
-	color: #aaa;
+	color: #777;
 	border: none;
 	font-size: 20px;
 	color: inherit;
@@ -28,7 +29,8 @@ h1 {
 
 }
 section {
-	background-image: url("../images/white-bg.jpg");
+	// background-image: url("../images/white-bg.jpg");
+	background-color: #69C2E0;
 	background-repeat: repeat;
 	// margin-top: 500px;
 	// background-size: 100vw;

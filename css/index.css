@@ -7,8 +7,9 @@
 
 .header {
   height: 100vh;
-  background-color: #69C2E0;
-  background-image: none;
+  width: 100%;
+  background-image: url("../images/white-bg.jpg");
+  background-size: cover;
   position: fixed;
   margin-top: -500px;
   z-index: -1;
@@ -39,7 +40,7 @@
 }
 
 .all {
-  background-image: url("../images/re.png");
+  background-color: #69C2E0;
   background-repeat: repeat;
   margin-top: 500px;
   background-size: 220px;
@@ -59,7 +60,7 @@
   list-style: none;
   text-align: right;
   padding: 0px;
-  color: #69C2E0;
+  color: #fff;
 }
 .navi ul a {
   display: inline-block;
@@ -73,7 +74,7 @@
 .navi ul a span {
   transition: opacity .2s ease-out;
   opacity: 0;
-  color: #aaa;
+  color: #F1D92F;
   font-size: 14px;
   position: absolute;
   top: 23px;
@@ -143,12 +144,11 @@
   height: auto;
   min-height: 220px;
   margin: 0px auto;
-  max-width: 1200px;
   background-image: none;
   box-sizing: border-box;
   font-size: 14px;
   line-height: 1.6;
-  color: #aaa;
+  color: #666;
   position: relative;
 }
 .content.about a {
@@ -205,7 +205,8 @@
           filter: grayscale(0%);
 }
 .content.works .team {
-  background-color: #fff;
+  background-color: #999;
+  position: relative;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -227,6 +228,8 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  transition: background-color .5s ease-out;
+  cursor: pointer;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
 }
 @media screen and (min-width: 1280px) {
@@ -236,35 +239,64 @@
 }
 @media screen and (max-width: 960px) and (min-width: 560px) {
   .content.works .team {
-    width: 45%;
+    width: 50%;
     height: 580px;
   }
 }
 @media screen and (max-width: 560px) {
   .content.works .team {
-    width: 95%;
+    width: 100%;
     height: 620px;
   }
 }
 .content.works .team:hover, .content.works .team:active {
-  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: #fff;
+}
+.content.works .team:hover h3, .content.works .team:active h3 {
+  color: #777;
+  font-size: 16px;
+  margin: 20px auto;
+}
+.content.works .team:hover .team-content, .content.works .team:active .team-content {
+  opacity: 1;
+}
+.content.works .team:hover .team-logo, .content.works .team:active .team-logo {
+  height: 80px;
+  margin-top: 0px;
+}
+.content.works .team:hover .team-photo, .content.works .team:active .team-photo {
+  width: 70%;
+  margin-top: 0px;
 }
 .content.works .team .team-logo {
-  height: 80px;
+  height: 120px;
+  margin-top: 20%;
+  transition: height .5s ease-out, margin-top .5s ease-out;
 }
 .content.works .team h3 {
   margin: 20px auto;
+  color: #fff;
+  font-size: 22px;
+  line-height: 30px;
+  transition: font-size .5s ease-out;
 }
 .content.works .team .team-content {
   height: 210px;
-  min-height: 210px;
-  font-size: 12px;
+  min-height: 170px;
+  font-size: 14px;
   line-height: 1.5;
+  opacity: 0;
+  transition: opacity .5s ease-out;
 }
 .content.works .team img {
   text-align: center;
   margin: 0px auto;
   vertical-align: bottom;
+}
+.content.works .team .team-photo {
+  width: 100%;
+  margin-top: -300px;
+  transition: width .5s ease-out, margin-top .5s ease-out;
 }
 
 .content-float {
@@ -279,10 +311,11 @@
   position: relative;
   padding: 0px;
   height: 400px;
+  max-width: auto;
 }
 
-.map {
-  height: 500px;
+.content.map {
+  min-height: auto;
 }
 
 @-webkit-keyframes dash {

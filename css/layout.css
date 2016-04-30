@@ -1,16 +1,14 @@
 body {
-  background-color: #69C2E0;
   font-family: 'Open Sans Condensed', sans-serif;
   margin: 0px;
-  color: #777;
+  color: #444;
   font-size: 18px;
   letter-spacing: 2px;
-  font-weight: 600;
   box-sizing: border-box;
 }
 
 a {
-  color: #aaa;
+  color: #777;
   border: none;
   font-size: 20px;
   color: inherit;
@@ -23,6 +21,6 @@ h1 {
 }
 
 section {
-  background-image: url("../images/white-bg.jpg");
+  background-color: #69C2E0;
   background-repeat: repeat;
 }
