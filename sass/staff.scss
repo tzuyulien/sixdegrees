@@ -4,16 +4,16 @@
 .display-people-item {
 	// height: 500px;
     display: inline-block;
-    margin-top: 40px;
+    // margin-top: 40px;
     position: relative;
-    width: 400px;
+    width: 200px;
     overflow: hidden;
     text-align: center;
     text-decoration: none;
 }
 .people-pic {
-	height: 400px;
-    width: 400px;
+	height: 200px;
+    width: 200px;
     display: inline-block;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,8 +32,12 @@
 @keyframes people-action {
   0% {background-position: -0px 0;}
   25% {background-position: -0px 0;}
-  50% {background-position: -400px 0;}
-  75% {background-position: -800px 0;}
-  100% {background-position: -1200px 0;}
+  50% {background-position: -200px 0;}
+  75% {background-position: -400px 0;}
+  100% {background-position: -600px 0;}
+}
+
+.group {
+    position: relative;
 }
 
