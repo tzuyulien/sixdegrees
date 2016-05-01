@@ -21,13 +21,14 @@
   margin-right: auto;
   margin: 10px;
   position: relative;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
-  transition: height 1s ease-out, width 1s ease-out, top 1s ease-out, left 1s ease-out, opacity 0.2s ease-out, background-color .2s ease-out;
+  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+  transition: height 1s ease-out, width 1s ease-out, top 1s ease-out, left 1s ease-out, opacity 0.2s ease-out, background-color .2s ease-out, box-shadow .2s ease-out;
 }
 .people-pic:hover {
   -webkit-animation: people-action 0.6s steps(1) forwards;
           animation: people-action 0.6s steps(1) forwards;
   background-color: #F1D92F;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 @-webkit-keyframes people-action {

@@ -39,5 +39,32 @@ section {
 
 footer {
   background-color: #999;
-  height: 30px;
+  height: 40px;
+  margin: 0 auto;
+  color: #efefef;
+  font-weight: 100;
+  text-align: center;
+}
+footer p {
+  display: inline;
+  font-size: 12px;
+  text-align: center;
+  margin: 10px;
+}
+footer p a {
+  font-size: 12px;
+  transition: color .3s ease-out;
+}
+footer p a:hover {
+  color: #ccc;
+}
+@media screen and (max-width: 960px) {
+  footer p {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 960px) {
+  footer {
+    height: 80px;
+  }
 }

@@ -117,6 +117,10 @@
 		<div class="content-float">
 			<div class="content about">
 				<a class="anchor" id="tab1-item"></a>
+				<h1>- ABOUT -</h1>
+				<div>
+					<p>我從某處得知，在地球上，人與人之間只被六個人隔絕。六度的分隔，正是這個星球的人際距離。</p><br>在六度分隔理論下，人與人之間的透過六個層次的關係而串聯 ; 數位時代的日新月異強化了這份聯結，不到六分之一的牽連都足以成為改變世界的契機。<br>本次畢展以【 Six Degree 】為主題，從數位購物設計、互動電子書、數位宗教體驗、視角轉換遊戲設計、聲光展覽互動、到互動酒杯創新社交體驗等，六組策展團隊透過數位內容與科技互動應用，展現六分之一改變世界的創意設計。
+				</div>
 				<!-- <h2>關於我們</h2> -->
 				<!-- <div>2016.5.24-28<br>National ChengChi University<br>Program in Digital Content and Technologies 5th<br>Graduation Exhibits<br>at <a>Social Sciences Information Center</a><br><br></div>
 				<div>國立政治大學<br>數位內容與科技學士學位學程<br>第五屆畢業展<br>政治大學社會科學資料中心</div> -->
@@ -372,6 +376,8 @@
 
 	</section>
 	<footer>
+		<p>主辦單位：<a target="_blank" href="http://dct.cs.nccu.edu.tw/">國立政治大學 數位內容與科技學士學位學程</a></p>
+		<p>贊助單位：<a target="_blank" href="http://www.cgcg.com.tw/">西基電腦動畫股份有限公司</a></p>
 		
 	</footer>
 		
@@ -386,7 +392,7 @@
 	var map;
 	function initMap() {
 		console.log('hi444');
-	var myLatLng = {lat: 24.986674, lng: 121.576759};
+	var myLatLng = {lat: 24.986113, lng: 121.578957};
 	var mapOptions = {
 		center: myLatLng,
 		zoom:18,
@@ -399,7 +405,7 @@
 	map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
 	var infowindow = new google.maps.InfoWindow();
 	var marker = new google.maps.Marker({
-    position: {lat: 24.986113, lng: 121.578957},
+    position: myLatLng,
     map: map,
     animation: google.maps.Animation.DROP,
     icon: 'images/map-icon.png',
