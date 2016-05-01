@@ -65,6 +65,11 @@
     background-position: -600px 0;
   }
 }
+.people {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 .group {
   display: inline;
 }
@@ -76,7 +81,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
+  width: 50%;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -87,12 +92,12 @@
   line-height: 44px;
 }
 .group .crew-name .crew-title {
-  width: 40%;
+  width: 50%;
   height: 44px;
 }
 .group .crew-name .peo-name {
   color: #fff;
   vertical-align: middle;
-  width: 60%;
+  width: 50%;
   height: 44px;
 }

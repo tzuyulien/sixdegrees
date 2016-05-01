@@ -335,6 +335,16 @@
   transition: width .5s ease-out, margin-top .5s ease-out;
   max-width: 400px;
 }
+.content.contact a {
+  transition: -webkit-filter .2s ease-out, filter .2s ease-out;
+}
+.content.contact a img {
+  width: 50px;
+}
+.content.contact a:hover {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
 
 .content-float {
   position: relative;
