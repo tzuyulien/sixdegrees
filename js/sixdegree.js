@@ -6,12 +6,11 @@ $(window).load(function(){
   if (contentWords.length) {
     // var boxTop = contentWords.offset().top;
     var boxTop = 500;
-    console.log(boxTop);
+    
     var flag = false;
 
     $(window).scroll(function() {
       windowTop = $(window).scrollTop();
-      // console.log(windowTop);
 
       if (!flag) {
         if (windowTop >= boxTop) {
@@ -29,7 +28,7 @@ $(window).load(function(){
       }
 
       if (windowTop >= boxTop) {
-        console.log('hi');
+        
         $('.content').each(function(i) {
             if ($(this).position().top <= windowTop) {
                 $('.navi-fixed ul a.active').removeClass('active');
@@ -57,7 +56,7 @@ var main = function() {
     $('html, body').animate({scrollTop: $("#tab1-item").offset().top - 90}, 1000);
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
-    console.log('1111');
+    
   });
   $(".tab2").click(function() {
     $('html, body').animate({scrollTop: $("#tab2-item").offset().top - 90}, 1000);
