@@ -52,8 +52,6 @@ $(window).load(function(){
 
 var main = function() {
 
-
-
   $(".all .navi-fixed ul a.tab1").click(function() {
     $('html, body').animate({scrollTop: $("#tab1-item").offset().top}, 1000);
     $(this).siblings().removeClass('active');

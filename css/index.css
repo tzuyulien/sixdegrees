@@ -58,7 +58,7 @@
 .navi ul {
   margin: 0px auto;
   list-style: none;
-  text-align: right;
+  text-align: center;
   padding: 0px;
   color: #fff;
 }
@@ -157,22 +157,39 @@
 .content.about div:nth-child(2) {
   font-size: 16px;
 }
-.content.event span {
-  margin-right: 15px;
-  width: 120px;
-  color: #555;
-  font-size: 18px;
-  font-weight: 800;
+.content.event {
+  color: #fff;
+  width: 350px;
 }
 .content.event div {
-  border-left: 30px solid #69C2E0;
+  border-left: 10px solid #999;
   height: 30px;
   margin: 10px 0px;
   line-height: 30px;
   padding-left: 15px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .content.event div:nth-child(odd) {
-  border-left: 30px solid #F1D92F;
+  border-left: 10px solid #F1D92F;
+}
+.content.event div span {
+  margin-right: 15px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+}
+.content.event div span p {
+  font-size: 12px;
+  margin-left: 5px;
+  display: inline;
 }
 .content.works {
   display: -webkit-flex;
@@ -205,7 +222,7 @@
           filter: grayscale(0%);
 }
 .content.works .team {
-  background-color: #999;
+  background-color: #efefef;
   position: relative;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
@@ -229,36 +246,27 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   transition: background-color .5s ease-out;
-  cursor: pointer;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
 }
-@media screen and (min-width: 1280px) {
-  .content.works .team {
-    height: 550px;
-  }
-}
-@media screen and (max-width: 960px) and (min-width: 560px) {
-  .content.works .team {
-    width: 50%;
-    height: 580px;
-  }
-}
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 960px) {
   .content.works .team {
     width: 100%;
-    height: 620px;
   }
 }
 .content.works .team:hover, .content.works .team:active {
-  background-color: #fff;
+  background-color: #999;
 }
 .content.works .team:hover h3, .content.works .team:active h3 {
-  color: #777;
+  color: #fff;
   font-size: 16px;
-  margin: 20px auto;
+  margin: 10px auto;
+  margin-bottom: 0px;
 }
 .content.works .team:hover .team-content, .content.works .team:active .team-content {
   opacity: 1;
+}
+.content.works .team:hover .fb-icon, .content.works .team:active .fb-icon {
+  display: block;
 }
 .content.works .team:hover .team-logo, .content.works .team:active .team-logo {
   height: 80px;
@@ -267,18 +275,43 @@
 .content.works .team:hover .team-photo, .content.works .team:active .team-photo {
   width: 70%;
   margin-top: 0px;
+  max-width: 300px;
 }
 .content.works .team .team-logo {
   height: 120px;
   margin-top: 20%;
-  transition: height .5s ease-out, margin-top .5s ease-out;
+  transition: height .3s ease-out, margin-top .3s ease-out;
+}
+.content.works .team .fb-icon {
+  color: #ececec;
+  width: 14px;
+  display: none;
+  transition: display .3s ease-out;
+  cursor: pointer;
+  float: right;
+  margin: 2px;
+  transition: -webkit-filter .2s ease-out, margin .2s ease-out, width .2s ease-out, filter .2s ease-out, margin .2s ease-out, width .2s ease-out;
+}
+.content.works .team .fb-icon:hover {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+  margin: 0px;
+  width: 18px;
+}
+.content.works .team a {
+  font-size: 22px;
+  text-align: center;
+  display: inline;
+  line-height: 30px;
+  margin: 0 auto;
+  cursor: pointer;
 }
 .content.works .team h3 {
   margin: 20px auto;
-  color: #fff;
+  color: #666;
   font-size: 22px;
   line-height: 30px;
-  transition: font-size .5s ease-out;
+  transition: font-size .5s ease-out, margin .5s ease-out;
 }
 .content.works .team .team-content {
   height: 210px;
@@ -286,7 +319,8 @@
   font-size: 14px;
   line-height: 1.5;
   opacity: 0;
-  transition: opacity .5s ease-out;
+  color: #ececec;
+  transition: opacity .3s ease-out;
 }
 .content.works .team img {
   text-align: center;
@@ -297,6 +331,7 @@
   width: 100%;
   margin-top: -300px;
   transition: width .5s ease-out, margin-top .5s ease-out;
+  max-width: 400px;
 }
 
 .content-float {
@@ -312,6 +347,13 @@
   padding: 0px;
   height: 400px;
   max-width: auto;
+}
+.map-body a {
+  font-size: 12px;
+  color: #69C2E0;
+}
+.map-body a:hover {
+  color: #777;
 }
 
 .content.map {
