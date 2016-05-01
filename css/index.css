@@ -11,13 +11,22 @@
   background-image: url("../images/white-bg.jpg");
   background-size: cover;
   position: fixed;
-  margin-top: -500px;
+  margin-top: -650px;
   z-index: -1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header svg {
   margin-left: -10px;
-  margin-top: 250px;
   display: inline-block;
+  margin-top: -40px;
   -webkit-animation-name: go;
           animation-name: go;
 }
@@ -28,21 +37,34 @@
           animation: dash 2s linear forwards;
 }
 .header .logo-word {
-  width: 250px;
-  left: 250px;
-  margin-left: -10px;
-  margin-top: 280px;
+  display: inline-block;
+}
+.header .logo-word img {
+  height: 150px;
   display: inline-block;
   transition: opacity .3s ease-out;
 }
-.header .logo-word:hover {
-  opacity: 0.6;
+.header .logo-word span {
+  position: absolute;
+  right: 30px;
+  margin-top: -30px;
+  opacity: 0;
+  font-size: 14px;
+  text-align: right;
+  color: #aaa;
+  transition: opacity .3s ease-out;
+}
+.header .logo-word:hover img {
+  opacity: 0.7;
+}
+.header .logo-word:hover span {
+  opacity: 1;
 }
 
 .all {
   background-color: #69C2E0;
   background-repeat: repeat;
-  margin-top: 500px;
+  margin-top: 650px;
   background-size: 220px;
   position: relative;
 }

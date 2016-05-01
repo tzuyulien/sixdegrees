@@ -12,13 +12,16 @@
 	background-size: cover;
 	// background-image: none;
 	position: fixed;
-	margin-top: -500px;
+	margin-top: -650px;
 	z-index: -1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
 		svg {
 			margin-left: -10px;
-			margin-top: 250px;
 			display: inline-block;
+			margin-top: -40px;
 			// position: absolute;
 			animation-name: go;
 		}
@@ -30,15 +33,30 @@
 		}
 
 		.logo-word {
-			width: 250px;
-			left: 250px;
-			margin-left: -10px;
-			margin-top: 280px;
 			display: inline-block;
-			// position: absolute;
-			transition: opacity .3s ease-out;
+			img{
+				height: 150px;
+				display: inline-block;
+				transition: opacity .3s ease-out;
+			}	
+			span {
+				position: absolute;
+				right: 30px;
+				margin-top: -30px;
+				opacity: 0;
+				font-size: 14px;
+				text-align: right;
+				color: #aaa;
+				transition: opacity .3s ease-out;
+			}
 			&:hover {
-				opacity: 0.6;
+				img {
+					opacity: 0.7;
+				}
+				span {
+					opacity: 1;
+				}
+
 			}
 
 		}
@@ -48,7 +66,7 @@
 	// background-image: url("../images/re.png");
 	background-color: #69C2E0;
 	background-repeat: repeat;
-	margin-top: 500px;
+	margin-top: 650px;
 	background-size: 220px;
 	position: relative;
 }

@@ -36,3 +36,8 @@ section {
   background-color: #69C2E0;
   background-repeat: repeat;
 }
+
+footer {
+  background-color: #999;
+  height: 30px;
+}
