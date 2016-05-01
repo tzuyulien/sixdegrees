@@ -54,33 +54,33 @@ var main = function() {
 
   $(".tab1").click(function() {
 
-    $('html, body').animate({scrollTop: $("#tab1-item").offset().top}, 1000);
+    $('html, body').animate({scrollTop: $("#tab1-item").offset().top - 90}, 1000);
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
     console.log('1111');
   });
   $(".tab2").click(function() {
-    $('html, body').animate({scrollTop: $("#tab2-item").offset().top}, 1000);
+    $('html, body').animate({scrollTop: $("#tab2-item").offset().top - 90}, 1000);
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
   });
   $(".tab3").click(function() {
-    $('html, body').animate({scrollTop: $("#tab3-item").offset().top}, 1000);
+    $('html, body').animate({scrollTop: $("#tab3-item").offset().top - 90}, 1000);
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
   });
   $(".tab4").click(function() {
-    $('html, body').animate({scrollTop: $("#tab4-item").offset().top}, 1000);
+    $('html, body').animate({scrollTop: $("#tab4-item").offset().top - 90}, 1000);
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
   });
   $(".tab5").click(function() {
-    $('html, body').animate({scrollTop: $("#tab5-item").offset().top}, 1000);
+    $('html, body').animate({scrollTop: $("#tab5-item").offset().top - 90}, 1000);
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
   });
   $(".tab6").click(function() {
-    $('html, body').animate({scrollTop: $("#tab6-item").offset().top}, 1000);
+    $('html, body').animate({scrollTop: $("#tab6-item").offset().top - 90}, 1000);
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
   });
