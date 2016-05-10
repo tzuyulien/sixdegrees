@@ -285,7 +285,7 @@
 }
 .content.event div {
   border-left: 10px solid #999;
-  height: 30px;
+  min-height: 30px;
   margin: 10px 0px;
   line-height: 30px;
   padding-left: 15px;
@@ -315,10 +315,20 @@
   margin-left: 5px;
   display: inline;
 }
+@media screen and (max-width: 960px) {
+  .content.event div span {
+    width: 100%;
+  }
+}
 .content.event div p {
   font-size: 16px;
   width: 50%;
   text-align: left;
+}
+@media screen and (max-width: 960px) {
+  .content.event div p {
+    width: 100%;
+  }
 }
 .content.works {
   display: -webkit-flex;
@@ -382,26 +392,26 @@
     width: 100%;
   }
 }
-.content.works .team:hover, .content.works .team:active {
+.content.works .team:hover, .content.works .team:active, .content.works .team:focus {
   background-color: #999;
 }
-.content.works .team:hover h3, .content.works .team:active h3 {
+.content.works .team:hover h3, .content.works .team:active h3, .content.works .team:focus h3 {
   color: #fff;
   font-size: 16px;
   margin: 10px auto;
   margin-bottom: 0px;
 }
-.content.works .team:hover .team-content, .content.works .team:active .team-content {
+.content.works .team:hover .team-content, .content.works .team:active .team-content, .content.works .team:focus .team-content {
   opacity: 1;
 }
-.content.works .team:hover .fb-icon, .content.works .team:active .fb-icon {
+.content.works .team:hover .fb-icon, .content.works .team:active .fb-icon, .content.works .team:focus .fb-icon {
   display: block;
 }
-.content.works .team:hover .team-logo, .content.works .team:active .team-logo {
+.content.works .team:hover .team-logo, .content.works .team:active .team-logo, .content.works .team:focus .team-logo {
   height: 80px;
   margin-top: 0px;
 }
-.content.works .team:hover .team-photo, .content.works .team:active .team-photo {
+.content.works .team:hover .team-photo, .content.works .team:active .team-photo, .content.works .team:focus .team-photo {
   width: 70%;
   margin-top: 0px;
   max-width: 300px;
@@ -462,6 +472,32 @@
   margin-top: -300px;
   transition: width .5s ease-out, margin-top .5s ease-out;
   max-width: 400px;
+}
+@media screen and (max-width: 960px) {
+  .content.works .team {
+    background-color: #999;
+  }
+  .content.works .team h3 {
+    color: #fff;
+    font-size: 16px;
+    margin: 10px auto;
+    margin-bottom: 0px;
+  }
+  .content.works .team .team-content {
+    opacity: 1;
+  }
+  .content.works .team .fb-icon {
+    display: block;
+  }
+  .content.works .team .team-logo {
+    height: 80px;
+    margin-top: 0px;
+  }
+  .content.works .team .team-photo {
+    width: 70%;
+    margin-top: 0px;
+    max-width: 300px;
+  }
 }
 .content.contact a {
   transition: -webkit-filter .2s ease-out, filter .2s ease-out;
