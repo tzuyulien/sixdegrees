@@ -94,7 +94,7 @@
 }
 .navi {
 	top: 500px;
-	height: 67px;
+	height: 0px;
 	ul {
 		margin: 0px auto;
 		list-style: none;
@@ -109,6 +109,7 @@
 			box-sizing: border-box;
 			div {
 				transition: opacity .2s ease-out;
+				font-weight: 800;
 			}
 			span {
 				transition: opacity .2s ease-out;
@@ -163,7 +164,7 @@
 	height: 100px;
 	width: 100%;
 	img {
-		height: 37px;
+		height: 20px;
 		padding-top: 10px;
 		box-sizing: border-box;
 	}
@@ -179,11 +180,13 @@
 			display: inline-block;
 			padding: 20px 30px;
 			width: 120px;
+			font-size: 16px;
 			box-sizing: border-box;
 
 			// color: #fff;
 			div {
 				transition: opacity .2s ease-out;
+				font-weight: 800;
 			}
 			span {
 				transition: opacity .2s ease-out;
@@ -202,7 +205,7 @@
 					opacity: 0;
 					@media screen and (max-width: 960px) {
 						opacity: 1;
-						color: #69C2E0;
+						color: #F1D92F;
 					}
 				}
 				span {
@@ -220,7 +223,7 @@
 			}
 			@media screen and (max-width: 660px) {
 				padding: 10px 0px;
-				font-size: 12px;
+				font-size: 14px;
 			}
 
 		}

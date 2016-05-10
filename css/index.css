@@ -101,7 +101,7 @@
 
 .navi {
   top: 500px;
-  height: 67px;
+  height: 0px;
 }
 .navi ul {
   margin: 0px auto;
@@ -118,6 +118,7 @@
 }
 .navi ul a div {
   transition: opacity .2s ease-out;
+  font-weight: 800;
 }
 .navi ul a span {
   transition: opacity .2s ease-out;
@@ -176,7 +177,7 @@
   width: 100%;
 }
 .navi-fixed img {
-  height: 37px;
+  height: 20px;
   padding-top: 10px;
   box-sizing: border-box;
 }
@@ -192,10 +193,12 @@
   display: inline-block;
   padding: 20px 30px;
   width: 120px;
+  font-size: 16px;
   box-sizing: border-box;
 }
 .navi-fixed ul a div {
   transition: opacity .2s ease-out;
+  font-weight: 800;
 }
 .navi-fixed ul a span {
   transition: opacity .2s ease-out;
@@ -213,7 +216,7 @@
 @media screen and (max-width: 960px) {
   .navi-fixed ul a:hover div {
     opacity: 1;
-    color: #69C2E0;
+    color: #F1D92F;
   }
 }
 .navi-fixed ul a:hover span {
@@ -234,7 +237,7 @@
 @media screen and (max-width: 660px) {
   .navi-fixed ul a {
     padding: 10px 0px;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 .navi-fixed.fixed {
