@@ -40,7 +40,7 @@ section {
 
 footer {
   background-color: #999;
-  height: 40px;
+  min-height: 40px;
   margin: 0 auto;
   color: #efefef;
   font-weight: 100;
